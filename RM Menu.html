@@ -12,24 +12,22 @@
       position: relative;
       width: 100%;
       height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       overflow: hidden;
     }
 
     .image {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
     .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       color: #fff;
       font-size: 16px;
       text-align: center;
@@ -39,11 +37,6 @@
       max-width: 600px;
       overflow-wrap: break-word;
       line-height: 1.5;
-    }
-
-    .text h1 {
-      font-size: 24px;
-      margin-bottom: 20px;
     }
 
     .text h2 {
@@ -61,6 +54,10 @@
     .text p {
       font-size: 16px;
       margin-bottom: 10px;
+    }
+
+    .footer {
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -95,8 +92,10 @@
           <h3>Amaranth: Red Beet Flavor, Mildly Sweet with a Touch of Grassiness. Some say it reminds them of Corn Silk.</h3>
         </li>
       </ul>
-      <p>All microgreens are $5 for 1.5 oz or $15 for 4.5 oz</p>
     </div>
+  </div>
+  <div class="footer">
+    <p>All microgreens are $5 for 1.5 oz or $15 for 4.5 oz</p>
   </div>
 </body>
 </html>
